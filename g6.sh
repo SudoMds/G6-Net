@@ -59,7 +59,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/socat TCP6-LISTEN:${local_port},fork,reuseaddr TCP6:[${remote_ipv6}]:${remote_port},nofork
+ExecStart=/usr/bin/socat TCP-LISTEN:${local_port},fork,reuseaddr TCP6:[${remote_ipv6}]:${remote_port}
 Restart=always
 
 [Install]
@@ -74,7 +74,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/socat UDP6-LISTEN:${local_port},fork,reuseaddr UDP6:[${remote_ipv6}]:${remote_port},nofork
+ExecStart=/usr/bin/socat UDP-LISTEN:${local_port},fork,reuseaddr UDP6:[${remote_ipv6}]:${remote_port}
 Restart=always
 
 [Install]
