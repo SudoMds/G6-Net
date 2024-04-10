@@ -1,4 +1,7 @@
 # How to Use
+git clone https://github.com/SudoMds/G6-Net.git
+cd G6-Net
+bash g6.sh
 ## 6to4 Manager / Socat TCP-UDP Forwarder
 
 - Establish a 6to4 tunnel between Ubuntu servers.
