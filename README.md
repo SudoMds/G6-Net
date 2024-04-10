@@ -1,20 +1,20 @@
-# 6to4 Manger / SocatTCP-UDP-Forwader
+# How to USE
+ 6to4 Manger / SocatTCP-UDP-Forwader
 - create 6to4 tunnel between ubuntu servers
 - create socat TCP/UDP forwarder through 6to4 with minimum cpu usage
 - you can manage 6to4 interfaces and socat services by menu
-# How to use
+ How to use
 1.Transfer the g6.sh in your server
 2.bash g6.sh
 3.in menu press 4
 4.enter your service name ,server public ipv4 ,remote server public ipv4 , a local ipv6 address example (1001:db8:101::1/64)
-# note : for example we configuring ServerA(iran) and ServerB(kharej) Server A local ipv6 must be 1001:db8:101::1/64 and ServerB must be 1001:db8:101::2/64 and if you have multiplie tunnels dont use same ip change it like this for second tunnel (2001:db8:101::1/64 & 2001:db8:101::2/64)
+ note : for example we configuring ServerA(iran) and ServerB(kharej) Server A local ipv6 must be 1001:db8:101::1/64 and ServerB must be 1001:db8:101::2/64 and if you have multiplie tunnels dont use same ip change it like this for second tunnel (2001:db8:101::1/64 & 2001:db8:101::2/64)
 5.after you enter the needed inputs tunnel will be established you should do it on the remote server too.
-# now we want to route incoming trrafic for example from port localserver(iran):2210 to remoteserver(v2ray):2210
+ now we want to route incoming trrafic for example from port localserver(iran):2210 to remoteserver(v2ray):2210
 6.in script menu push select option 1.Create a new socat service and enter service name,local server port(2210),local ipv6 of remote server(1001:db8:101::2/64 ) in our example,port of v2ray service
 done tunnel established and routing works like BENZ :)
 
 # Persian
-# 6to4 Manger / SocatTCP-UDP-Forwarder
 - ایجاد تونل 6to4 بین سرورهای اوبونتو
 - ایجاد Socat TCP/UDP Forwarder از طریق 6to4 با حداقل استفاده از cpu
 - می توانید رابط های 6to4 و خدمات socat را با منو مدیریت کنید
